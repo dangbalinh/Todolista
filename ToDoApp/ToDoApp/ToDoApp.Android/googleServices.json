@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "761445539054",
+    "project_id": "xamarinproject-c7a59",
+    "storage_bucket": "xamarinproject-c7a59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761445539054:android:cf6b861edda7beef71e7ff",
+        "android_client_info": {
+          "package_name": "com.gheorghedarle.todoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761445539054-shh6vmuiu3o27vbg95ffu6lgvf3nqko1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpmG_5FaN8UVlZbqI92Rx6m_LvMiHi8dw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761445539054-shh6vmuiu3o27vbg95ffu6lgvf3nqko1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
