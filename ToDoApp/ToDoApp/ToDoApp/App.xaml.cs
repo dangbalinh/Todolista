@@ -48,7 +48,8 @@ namespace ToDoApp
             var isLoggedIn = auth.IsLoggedIn();
             if (isLoggedIn)
             {
-                await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(TasksPage)}");
+                //await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(TasksPage)}");
+                await NavigationService.NavigateAsync("HomePage");
             }
             else
             {
@@ -71,6 +72,7 @@ namespace ToDoApp
             containerRegistry.RegisterForNavigation<ProfilePage, ProfilePageViewModel>("ProfilePage");
             containerRegistry.RegisterForNavigation<AuthPage, AuthPageViewModel>("AuthPage");
             containerRegistry.RegisterForNavigation<MorePage, MorePageViewModel>("MorePage");
+            containerRegistry.RegisterForNavigation<HomePage>("HomePage");
 
             containerRegistry.RegisterForRegionNavigation<AddEditListTemplate, AddEditListViewModel>("AddEditListTemplate");
             containerRegistry.RegisterForRegionNavigation<AddEditTaskTemplate, AddEditTaskViewModel>("AddEditTaskTemplate");

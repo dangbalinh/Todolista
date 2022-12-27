@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ToDoApp.Views.CalendarPage"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    xmlns:fragments="clr-namespace:ToDoApp.Views.Fragments"
+    xmlns:xc="clr-namespace:XCalendar;assembly=XCalendar"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="{AppThemeBinding Light={StaticResource LightPageBackgroundColor}, Dark={StaticResource DarkPageBackgroundColor}}">
+        <xct:StateLayout.StateViews>
+                <xct:StateView 
+                    StateKey="Loading"
+                    VerticalOptions="FillAndExpand">
+                    <fragments:LoadingView></fragments:LoadingView>
+                </xct:StateView>
+                <xct:StateView 
+                    StateKey="Error"
+                    VerticalOptions="FillAndExpand">
+                    <fragments:ErrorView></fragments:ErrorView>
+                </xct:StateView>
+        </xct:StateLayout.StateViews>
+
+
+            <!--<fragments:ConnectionView/>-->
+        <xc:CalendarView x:Name="calendar" DateSelectionChanged="calendar_DateSelectionChanged"
+                         SelectionType="Single"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
